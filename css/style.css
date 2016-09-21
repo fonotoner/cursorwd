@@ -138,3 +138,14 @@ article > header {
 .foto-slide {
     width: 80%;
 }
+
+
+/* SLIDER RESPONSIVE POR CSS, toma ya! ;) */
+@keyframes slider {
+    0% {left: 0%:}
+    20% {left: 0%:}
+    40% {left: 0%:}
+    60% {left: 0%:}
+    80% {left: 0%:}
+    100% {left: 0%:}
+}
