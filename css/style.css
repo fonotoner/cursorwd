@@ -87,7 +87,10 @@ input, select {
 }
 
 
-/* Aquí termina los estilos de Reset Stylesheet v1.6.1   */
+/* Aquí TERMINAN los estilos de Reset Stylesheet v1.6.1   */
+
+
+/* Aquí COMIENZAN los estilos de los elementos standard   */
 
 * {
     font-size: 20px;
@@ -124,6 +127,12 @@ article > header {
     margin: 20px;
 }
 
+
+/* Aquí TERMINAN los estilos de los elementos standard   */
+
+
+/* Aquí COMIENZAN los estilos específicos de algunas clases e ids que se definen en las distintas páginas   */
+
 .primary {
     color: darkblue;
 }
@@ -141,6 +150,7 @@ article > header {
 
 
 /* SLIDER RESPONSIVE POR CSS, toma ya! ;) */
+
 @keyframes slider {
     0% {left: 0%:}
     20% {left: 0%:}
