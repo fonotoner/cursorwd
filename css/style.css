@@ -153,9 +153,9 @@ article > header {
 
 @keyframes slider {
     0% {left: 0%:}
-    20% {left: 0%:}
-    40% {left: 0%:}
-    60% {left: 0%:}
-    80% {left: 0%:}
-    100% {left: 0%:}
+    20% {left: -100%:}
+    40% {left: -200%:}
+    60% {left: -300%:}
+    80% {left: -400%:}
+    100% {left: -500%:}
 }
