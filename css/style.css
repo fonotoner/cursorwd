@@ -144,18 +144,39 @@ article > header {
     font-size: 50px;
 }
 
-.foto-slide {
-    width: 80%;
+/* SLIDER RESPONSIVE POR CSS, toma ya! ;) */
+
+
+
+@keyframes slider {
+    0% {left: 0%;}
+    20% {left: 0%;}
+    25% {left: -100%;}
+    45% {left: -100%;}
+    50% {left: -200%;}
+    70% {left: -200%;}
+    75% {left: -300%;}
+    95% {left: -300%;}
+    100% {left: -400%;}
 }
 
 
-/* SLIDER RESPONSIVE POR CSS, toma ya! ;) */
+#slider{
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
 
-@keyframes slider {
-    0% {left: 0%:}
-    20% {left: -100%:}
-    40% {left: -200%:}
-    60% {left: -300%:}
-    80% {left: -400%:}
-    100% {left: -500%:}
+
+div#slider{
+    overflow: hidden;
+}
+div#slider figure img { width: 20%; float: left}
+div#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    animation: 30s slider infinite;
 }
