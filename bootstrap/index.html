@@ -14,6 +14,8 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+      <style>.row > div {outline: 1px solid black}</style>
   </head>
   <body>
      <h1>¡Kaixo Mundo!</h1>
@@ -170,6 +172,150 @@
 
       <p>Mejor utilzar <a href="https://github.com/filamentgroup/tablesaw">TABLESAW</a></p>
 
+    <h2>Imágnes <small>algunos recursos de bootstrap para trabajar con imágenes</small></h2>
+
+
+      <img src="https://unsplash.com/photos/sAGXVK6bNFc/download" width="300px" class="img-rounded">
+      <img src="https://unsplash.com/photos/sAGXVK6bNFc/download" width="300px" class="img-circle">
+      <img src="https://unsplash.com/photos/sAGXVK6bNFc/download" width="300px" class="img-thumbnail">
+
+    <h2>Fomularios <small>fasil, sensillo.... y para toda la familia!!</small></h2>
+    <h3>Formulario Normal</h3>
+
+    <form role="form">
+      <div class="form-group">
+        <label for="ejemplo_email_1">Email</label>
+        <input type="email" class="form-control" id="ejemplo_email_1"
+               placeholder="Introduce tu email">
+      </div>
+      <div class="form-group">
+        <label for="ejemplo_password_1">Contraseña</label>
+        <input type="password" class="form-control" id="ejemplo_password_1"
+               placeholder="Contraseña">
+      </div>
+      <div class="form-group">
+        <label for="ejemplo_archivo_1">Adjuntar un archivo</label>
+        <input type="file" id="ejemplo_archivo_1">
+        <p class="help-block">Ejemplo de texto de ayuda.</p>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Activa esta casilla
+        </label>
+      </div>
+      <button type="submit" class="btn btn-default">Enviar</button>
+    </form>
+
+
+        <h3>Formulario con las etiquetas en el placeholder</h3>
+
+    <form role="form-inline">
+      <div class="form-group">
+        <label for="ejemplo_email_1">Email</label>
+        <input type="email" class="form-control" id="ejemplo_email_1"
+               placeholder="Introduce tu email">
+      </div>
+      <div class="form-group">
+        <label for="ejemplo_password_1">Contraseña</label>
+        <input type="password" class="form-control" id="ejemplo_password_1"
+               placeholder="Contraseña">
+      </div>
+      <div class="form-group">
+        <label for="ejemplo_archivo_1">Adjuntar un archivo</label>
+        <input type="file" id="ejemplo_archivo_1">
+        <p class="help-block">Ejemplo de texto de ayuda.</p>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Activa esta casilla
+        </label>
+      </div>
+      <button type="submit" class="btn btn-default">Enviar</button>
+    </form>
+
+    <!-- Botón normal -->
+    <button type="button" class="btn btn-default">Normal</button>
+
+    <!-- Muestra el botón de forma destacada para descubrir fácilmente
+         el botón principal dentro de un grupo de botones -->
+    <button type="button" class="btn btn-primary">Destacado</button>
+
+    <!-- Indica una acción exitosa o positiva -->
+    <button type="button" class="btn btn-success">Éxito</button>
+
+    <!-- Botón pensado para los mensajes con alertas informativas -->
+    <button type="button" class="btn btn-info">Información</button>
+
+    <!-- Indica que hay que tener cuidado con la acción asociada al botón -->
+    <button type="button" class="btn btn-warning">Advertencia</button>
+
+    <!-- Indica una acción negativa o potencialmente peligrosa -->
+    <button type="button" class="btn btn-danger" href="http://google.es">Peligro</button>
+
+    <!-- Resta importancia al botón haciéndolo parecer un simple enlace,
+         aunque conserva tu comportamiento original de botón -->
+    <button type="button" class="btn btn-link">Enlace</button>
+
+
+    <button type="button" class="btn btn-primary btn-lg btn-block">Botón de bloque</button>
+    <button type="button" class="btn btn-default btn-lg btn-block">Botón de bloque</button>
+
+
+    <a href="http://google.es" class="btn btn-info">Información</a>
+
+   <div class="btn-toolbar" role="toolbar">
+      <div class="btn-group">
+        <button type="button" class="btn btn-default">
+          <span class="glyphicon glyphicon-align-left"></span>
+        </button>
+
+        <button type="button" class="btn btn-default">
+          <span class="glyphicon glyphicon-align-center"></span>
+        </button>
+
+        <button type="button" class="btn btn-default">
+          <span class="glyphicon glyphicon-align-right"></span>
+        </button>
+
+        <button type="button" class="btn btn-default">
+          <span class="glyphicon glyphicon-align-justify"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="btn-group btn-group-lg btn-group-primary">
+  <button type="button" class="btn btn-default">Izquierdo</button>
+  <button type="button" class="btn btn-default">Central</button>
+  <button type="button" class="btn btn-default">Derecho</button>
+</div>
+
+   <div class="row">
+      <div class="col-sm-6 col-md-1">.col-md-1</div>
+      <div class="col-sm-6 col-md-1">.col-md-1</div>
+      <div class="col-sm-4 col-md-1">.col-md-1</div>
+      <div class="col-sm-4 col-md-1">.col-md-1</div>
+      <div class="col-sm-4 col-md-1">.col-md-1</div>
+      <div class="col-sm-6 col-md-1">.col-md-1</div>
+      <div class="col-sm-6 col-md-1">.col-md-1</div>
+      <div class="col-sm-6 col-md-1">.col-md-1</div>
+      <div class="col-sm-6 col-md-1">.col-md-1</div>
+      <div class="col-sm-6 col-md-1">.col-md-1</div>
+      <div class="col-sm-6 col-md-1">.col-md-1</div>
+      <div class="col-sm-6 col-md-1">.col-md-1</div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">.col-md-8</div>
+      <div class="col-md-4">.col-md-4</div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-4">.col-md-4</div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">.col-md-6</div>
+      <div class="col-md-6">.col-md-6</div>
+    </div>
     <!-- Librería jQuery requerida por los plugins de JavaScript -->
     <script src="http://code.jquery.com/jquery.js"></script>
 
