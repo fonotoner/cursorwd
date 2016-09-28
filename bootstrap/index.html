@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plantilla básica de Bootstrap</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- librerías opcionales que activan el soporte de HTML5 para IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+     <h1>¡Kaixo Mundo!</h1>
+
+     <h2>Tipografía <small>bold, em, strong, i y b</small></h2>
+
+     <p>Lorem <b>ipsum</b> dolor <i>sit</i> amet, <strong>consectetur</strong> adipiscing <em>elit</em>. Donec ut tellus id purus.</p>
+
+     <p class="lead">Proin finibus eleifend commodo. Donec lacinia elit non lectus congue, eu egestas libero commodo.</p>
+
+     <p>Cras eu pharetra justo, non pretium nisl. Ut iaculis erat sit amet orci tempor, quis scelerisque nisi efficitur. Donec sed dolor rutrum tellus dapibus pharetra.</p>
+
+     <h2>Alinear párrafos <small>clases text -left -center -right</small></h2>
+
+     <p class="text-left">Texto alineado a la izquierda.</p>
+     <p class="text-center">Texto centrado.</p>
+     <p class="text-right">Texto alineado a la derecha.</p>
+
+     <h2>Color del texto <small>clases predefinidas para colores</small></h2>
+
+     <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+     <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+     <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+     <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+     <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+     <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+
+     <h2>Las abreviaturas <small>clases predefinidas ver etiquetas con el significado</small></h2>
+
+     <p>Este texto contiene abreviaturas como <abbr title="señor">Sr.</abbr> y <abbr title="señora">Sra.</abbr></p>
+
+     <h2>Direcciones <small>para mostrar la información de contacto de tu sitio o página</small></h2>
+
+        <address>
+          <strong>Empresa S.A.</strong><br>
+          Avenida Principal 123<br>
+          Ciudad, Provincia 00000<br>
+          <abbr title="Phone">Tel:</abbr> 9XX 123 456
+        </address>
+
+        <address>
+          <strong>Nombre Apellido</strong><br>
+          <a href="mailto:#">nombre.apellido@ejemplo.com</a>
+        </address>
+
+     <h2>Citas <small>para hablar de referencias externas</small></h2>
+
+        <blockquote>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+
+          <small>Frase célebre de <cite title="Nombre Apellidos">Nombre Apellidos</cite></small>
+        </blockquote>
+
+        <blockquote class="pull-right">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+
+          <small>Frase célebre de <cite title="Nombre Apellidos">Nombre Apellidos</cite></small>
+        </blockquote>
+
+     <h2>Listas <small>como las utiliza bootstrap</small></h2>
+
+     <ul class="list-unstyled">
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Consectetur adipiscing elit</li>
+      <li>Integer molestie lorem at massa</li>
+      <li>Facilisis in pretium nisl aliquet</li>
+      <li>Nulla volutpat aliquam velit
+        <ul>
+          <li>Phasellus iaculis neque</li>
+          <li>Purus sodales ultricies</li>
+          <li>Vestibulum laoreet porttitor sem</li>
+          <li>Ac tristique libero volutpat at</li>
+        </ul>
+      </li>
+      <li>Faucibus porta lacus fringilla vel</li>
+      <li>Aenean sit amet erat nunc</li>
+      <li>Eget porttitor lorem</li>
+    </ul>
+
+
+    <ul class="list-inline">
+      <li>Lorem ipsum</li>
+      <li>Phasellus iaculis</li>
+      <li>Nulla volutpat</li>
+    </ul>
+
+    <dl>
+      <dt>Description lists</dt>
+      <dd>A description list is perfect for defining terms.</dd>
+      <dt>Euismod</dt>
+      <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+      <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+      <dt>Malesuada porta</dt>
+      <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+    </dl>
+
+    <dl class="dl-horizontal">
+      <dt>Description lists</dt>
+      <dd>A description list is perfect for defining terms.</dd>
+      <dt>Euismod</dt>
+      <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+      <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+      <dt>Malesuada porta</dt>
+      <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+    </dl>
+
+
+     <h2>Tablas responsive<small>Una de las soluciones de bootstrap para tablas en móviles</small></h2>
+
+     <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Cabecera de tabla</th>
+              <th>Cabecera de tabla</th>
+              <th>Cabecera de tabla</th>
+              <th>Cabecera de tabla</th>
+              <th>Cabecera de tabla</th>
+              <th>Cabecera de tabla</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Celda de tabla</td>
+              <td>Celda de tabla</td>
+              <td>Celda de tabla</td>
+              <td>Celda de tabla</td>
+              <td>Celda de tabla</td>
+              <td>Celda de tabla</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Celda de tabla</td>
+              <td>Celda de tabla</td>
+              <td>Celda de tabla</td>
+              <td>Celda de tabla</td>
+              <td>Celda de tabla</td>
+              <td>Celda de tabla</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Celda de tabla</td>
+              <td>Celda de tabla</td>
+              <td>Celda de tabla</td>
+              <td>Celda de tabla</td>
+              <td>Celda de tabla</td>
+              <td>Celda de tabla</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Mejor utilzar <a href="https://github.com/filamentgroup/tablesaw">TABLESAW</a></p>
+
+    <!-- Librería jQuery requerida por los plugins de JavaScript -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+    <!-- Todos los plugins JavaScript de Bootstrap (también puedes
+         incluir archivos JavaScript individuales de los únicos
+         plugins que utilices) -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
