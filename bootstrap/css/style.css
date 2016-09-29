@@ -1,0 +1,21 @@
+body {
+    padding: 20px 10%;
+}
+
+header {
+    text-align: center
+}
+
+
+.cabecera {
+    width: 50%;
+}
+
+.articulo {
+    width: 100%;
+
+}
+
+.pieiconos {
+    margin-left: 15px;
+}
