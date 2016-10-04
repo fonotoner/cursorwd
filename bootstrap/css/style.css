@@ -19,3 +19,12 @@ header {
 .pieiconos {
     margin-left: 15px;
 }
+
+.articulo2 {
+    width: 100%;
+}
+
+.alturacol {
+    height: 200px;
+    overflow: hidden;
+}
