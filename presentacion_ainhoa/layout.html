@@ -1,0 +1,366 @@
+<!doctype html>
+
+<!--
+
+    Welcome to the light side of the source, young padawan.
+
+    One step closer to learn something interesting you are...
+
+                               ____
+                            _.' :  `._
+                        .-.'`.  ;   .'`.-.
+               __      / : ___\ ;  /___ ; \      __
+             ,'_ ""=-.:__;".-.";: :".-.":__;.-="" _`,
+             :' `.t""=-.. '<@.`;_  ',@:` ..-=""j.' `;
+                  `:-.._J '-.-'L__ `-.-' L_..-;'
+                    "-.__ ;  .-"  "-.  : __.-"
+                        L ' /.======.\ ' J
+                         "-.   "__"   .-"
+                        __.l"-:_JL_;-";.__
+                     .-j/'.;  ;""""  / .'\"-.
+                   .' /:`. "-.:     .-" .';  `.
+                .-"  / ;  "-. "-..-" .-"  :    "-.
+             .+"-.  : :      "-.__.-"      ;-._   \
+             ; \  `.; ;                    : : "+. ;
+             :  ;   ; ;                    : ;  : \:
+             ;  :   ; :                    ;:   ;  :
+            : \  ;  :  ;                  : ;  /  ::
+            ;  ; :   ; :                  ;   :   ;:
+            :  :  ;  :  ;                : :  ;  : ;
+            ;\    :   ; :                ; ;     ; ;
+            : `."-;   :  ;              :  ;    /  ;
+             ;    -:   ; :              ;  : .-"   :
+             :\     \  :  ;            : \.-"      :
+              ;`.    \  ; :            ;.'_..-=  / ;
+              :  "-.  "-:  ;          :/."      .'  :
+               \         \ :          ;/  __        :
+                \       .-`.\        /t-""  ":-+.   :
+                 `.  .-"    `l    __/ /`. :  ; ; \  ;
+                   \   .-" .-"-.-"  .' .'j \  /   ;/
+                    \ / .-"   /.     .'.' ;_:'    ;
+                     :-""-.`./-.'     /    `.___.'
+                           \ `t  ._  /
+                            "-.t-._:'
+
+-->
+
+<!--
+
+    So you'd like to know how to use impress.js?
+
+    You've made the first, very important step - you're reading the source code.
+    And that's how impress.js presentations are built - with HTML and CSS code.
+
+    Believe me, you need quite decent HTML and CSS skills to be able to use impress.js effectively.
+    And what is even more important, you need to be a designer, too, because there are no default
+    styles for impress.js presentations, there is no default or automatic layout for them.
+
+    You need to design and build it by hand.
+
+    So...
+
+    Would you still like to know how to use impress.js?
+
+-->
+
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+   <title>Curso Responsive Web Design</title>
+
+    <meta name="description" content="Curso/Taller de Responsive Web Design" />
+    <meta name="author" content="Ainhoa Iglesias" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+	<link href="css/mystyle.css" rel="stylesheet" />
+
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+
+
+	<!-- 1	-->
+	<div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+        <h1 class="titulo">Responsive Web Design</h1>
+		<p class="fechalugar"></p>
+		<p class="autor">1) Layout Flexible<br></p>
+    </div>
+
+
+
+	<div class="step slide" data-x="0" data-y="0">
+        <h2 class="subtitulo">Norma básica</h2>
+		<p class="conclusion">
+		objetivo/contexto = resultado<br><br>
+		<img src="img/grid.jpg" alt="Grid"><br>
+		300px / 960px = 31.25%
+		</p>
+
+		<p class="conclusion">
+		<span><a href="http://www.discussdesk.com/responsive-web-design-width-calculator">¿Necesitas calculadora?</a></span> -
+		<span><a href="http://www.rwdcalc.com/">y otra más</a></span>
+		</p>
+    </div>
+
+
+	<div class="step slide" data-x="1000" data-y="0">
+        <h2 class="subtitulo">Para textos</h2>
+		<p class="code">
+		body{font-size:100%;} <span class="comment">/* 16px */</span><br>
+		<!-- h1{font-size:1.5em; } <span class="comment">/* 24px / 16px = 1,5 */</span> -->
+		</p>
+
+		<p class="conclusion">
+		<span><a href="http://pxtoem.com/">Conversiones</a></span>
+		</p>
+    </div>
+
+
+	<div class="step slide" data-x="2000" data-y="0">
+        <h2 class="subtitulo">Para bloques</h2>
+		<p class="code">
+		<!-- .body-wrap{max-width:60em;} <span class="comment">/* 960px / 16px = 60 */</span><br> -->
+		.contenido{width:72.91%;} <span class="comment">/* 700px / 960px = 0,7291 */</span>
+		</p>
+		<p class="conclusion">También podemos usarlo en margin y padding, p.e.</p>
+    </div>
+
+
+	<div class="step slide" data-x="3000" data-y="0">
+        <h2 class="subtitulo">Cuidado con el renderizado subpixel</h2>
+
+		<p class="code">
+		.padre{width:50px;} .hijo{width:25%;} <span class="comment">/* 50px / 4 (25%) = 12,5px */</span>
+		</p>
+
+		<p class="conclusion"><img src="img/subpixel.png" alt="Subpixel"><br>
+		<span class="fuente">fuente: <a href="http://ejohn.org/blog/sub-pixel-problems-in-css/">John Resig</a></span>
+		</p>
+    </div>
+
+
+	<div class="step slide" data-x="4000" data-y="0">
+        <h2 class="subtitulo">Cuidado con el renderizado subpixel</h2>
+
+		<p class="code">
+		.contenido{width:72.91%;} <span class="comment">/* 700px / 960px = 0,7291 */</span><br>
+
+		Para IE:<br>
+		.contenido{width:72.81%;} <span class="comment">/* 699px / 960px = 0,7281 */</span>
+		</p>
+    </div>
+
+
+	<div class="step slide" data-x="5000" data-y="0">
+        <h2 class="subtitulo">¿Con qué unidades trabajo?</h2>
+
+		<ul class="lista lista-c">
+			<li>%</li>
+			<li>em</li>
+			<li>rem</li>
+			<li>px</li>
+			<li>vw, wh (¿no te suena? luego lo explicamos)</li>
+			<li><a href="http://css-tricks.com/the-lengths-of-css/">Otras</a></li>
+		</ul>
+		<p class="conclusion">Depende!</p>
+
+    </div>
+
+
+
+	<div class="step slide" data-x="0" data-y="1500">
+        <h2 class="subtitulo">Diferentes patrones</h2>
+
+		<ul class="lista lista-1">
+			<li>Fluido</li>
+			<li>Redistribución natural de columnas</li>
+			<li>Cambio de maquetación</li>
+			<li>Monocolumna</li>
+			<li>Contenido fuera de pantalla</li>
+		</ul>
+		<p class="conclusion">
+		<span class="fuente">fuente: <a href="http://www.lukew.com/ff/entry.asp?1514">Luke W.</a></span>
+		</p>
+    </div>
+
+	<!--
+	<div class="step slide" data-x="1000" data-y="1500">
+        <h2 class="subtitulo">1) Fluido</h2>
+		<p class="conclusion"><img src="img/patron1.png" alt="Patrón 1"></p>
+    </div>
+
+
+	<div class="step slide" data-x="2000" data-y="1500">
+        <h2 class="subtitulo">2) Redistribución natural de columnas</h2>
+		<p class="conclusion"><img src="img/patron2.png" alt="Patrón 2"></p>
+    </div>
+
+
+	<div class="step slide" data-x="3000" data-y="1500">
+        <h2 class="subtitulo">3) Cambio de maquetación</h2>
+		<p class="conclusion"><img src="img/patron3.png" alt="Patrón 3"></p>
+    </div>
+
+
+	<div class="step slide" data-x="4000" data-y="1500">
+        <h2 class="subtitulo">4) Monocolumna</h2>
+		<p class="conclusion"><img src="img/patron4.png" alt="Patrón 4"></p>
+    </div>
+
+
+	<div class="step slide" data-x="5000" data-y="1500">
+        <h2 class="subtitulo">5) Contenido fuera de pantalla</h2>
+		<p class="conclusion"><img src="img/patron5.png" alt="Patrón 5"></p>
+    </div>
+	-->
+
+	<div class="step slide" data-x="6000" data-y="1500">
+        <h2 class="subtitulo">Todos los patrones</h2>
+		<p class="conclusion"><img src="img/patron0.png" alt="Patrón todos"></p>
+    </div>
+
+
+	<div class="step slide" data-x="0" data-y="3000">
+        <h2 class="subtitulo">¿Cómo maqueto?</h2>
+
+		<p>Con las técnicas que queramos</p>
+    </div>
+
+
+	<div class="step slide" data-x="1000" data-y="3000">
+        <h2 class="subtitulo">Sistemas de rejillas</h2>
+
+		<ul class="lista lista-c">
+			<li><a href="http://builtbyboon.com/blog/proportional-grids">Proportional grids</a></li>
+			<li><a href="http://gridpak.com/">Grid Pack</a></li>
+			<li><a href="http://www.responsivegridsystem.com/">Responsive Grid System</a></li>
+			<li><a href="http://fluidbaselinegrid.com/">Fluid Baseline Grid</a></li>
+			<li><a href="http://designinstruct.com/web-design/responsive-css-grid/">Extra: muchas más plantillas y comparativa</a></li>
+		</ul>
+		<p class="conclusion">Cuidado con el "marcado semántico" de estas plantillas</p>
+    </div>
+
+
+
+
+	<div class="step slide" data-x="0" data-y="4500">
+        <h2 class="subtitulo">Más Recursos</h2>
+
+		<ul class="lista lista-c">
+			<li>Bocetos</li>
+			<li>PSD / HTML Prototipado</li>
+			<li>Frameworks</li>
+			<li>Otros</li>
+		</ul>
+    </div>
+
+
+
+	<div class="step slide" data-x="2000" data-y="4500">
+        <h2 class="subtitulo">Bocetos</h2>
+
+		<ul class="lista lista-c">
+			<li>Papel
+				<ul>
+				<li><a href="http://zurb.com/playground/responsive-sketchsheets">Sketch Sheets 1</a></li>
+				<li><a href="http://www.interfacesketch.com/">Sketch Sheets 2</a></li>
+				<li><a href="http://www.mightymeta.co.uk/responsive-web-design-sketch-sheets/">Sketch Sheets 3</a></li>
+				</ul>
+			</li>
+
+			<li>PSD / HTML Prototipado
+				<ul>
+				<li><a href="http://daverupert.com/2013/04/responsive-deliverables/">Responsive Deliverables</a></li>
+				<li><a href="http://styletil.es/">Style tiles</a></li>
+				<li><a href="http://webstiles.namanyayg.com/">Webstyles</a></li>
+				</ul>
+			</li>
+		</ul>
+    </div>
+
+
+	<div class="step slide" data-x="3000" data-y="4500">
+        <h2 class="subtitulo">Frameworks</h2>
+
+		<ul class="lista lista-c">
+
+			<li><a href="http://getbootstrap.com/">Twitter Bootstrap</a></li>
+			<li><a href="http://foundation.zurb.com/">Foundation ZURB</a></li>
+			<li><a href="http://html5boilerplate.com/mobile/">Mobile boilerplate</a></li>
+			<li><a href="http://speckyboy.com/2012/08/21/15-more-responsive-css-frameworks-boilerplates-worth-considering/">Algunos más</a></li>
+		</ul>
+    </div>
+
+	<div class="step slide" data-x="4000" data-y="4500">
+        <h2 class="subtitulo">Otros</h2>
+
+		<ul class="lista lista-c">
+			<li><a href="http://intentionjs.com/">IntentionJS: reestructuración de html de forma dinámica</a></li>
+			<li><a href="http://www.mademyday.de/css-height-equals-width-with-pure-css.html">Mantener el ratio de un bloque al redimensionar</a></li>
+			<li><a href="http://zomigi.com/blog/essential-resources-for-creating-liquid-and-elastic-layouts/">Buen recopilatorio de recursos para layout rwd</a></li>
+
+		</ul>
+    </div>
+
+
+
+
+	<div class="step slide" data-x="0" data-y="6000">
+        <h2 class="subtitulo">Adaptar</h2>
+		<ul class="lista lista-1">
+			<li><a href="layout.html">Layout flexible</a></li>
+			<li><a href="mediaqueries.html">Media Queries</a></li>
+			<li><a href="multimedia.html">Multimedia flexible</a></li>
+			<li><a href="contenido.html">Contenido flexible</a></li>
+		</ul>
+    </div>
+
+
+
+
+	<!--
+	<link rel="stylesheet" type="text/css"
+  media="screen and (max-device-width: 480px) and (resolution: 163dpi)"
+  href="shetland.css" />
+
+  Media Queries en EMs
+  REMs
+  http://blog.cloudfour.com/the-ems-have-it-proportional-media-queries-ftw/
+	-->
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) {
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+
+
+
+
+</body>
+</html>

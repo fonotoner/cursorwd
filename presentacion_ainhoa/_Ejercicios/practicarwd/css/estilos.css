@@ -1,0 +1,15 @@
+/*
+Cómo ocultar la flecha del desplegable de un <select>:
+- https://gist.github.com/joaocunha/6273016
+
+Explicación detallada de 'appearance':
+- http://css-tricks.com/almanac/properties/a/appearance/
+(se ha eliminado de la especificación de momento, pero no se sabe si la van a traer de vuelta más adelante o la van a añadir en otro módulo)
+*/
+select {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+}

@@ -1,0 +1,366 @@
+<!doctype html>
+
+<!--
+
+    Welcome to the light side of the source, young padawan.
+
+    One step closer to learn something interesting you are...
+
+                               ____
+                            _.' :  `._
+                        .-.'`.  ;   .'`.-.
+               __      / : ___\ ;  /___ ; \      __
+             ,'_ ""=-.:__;".-.";: :".-.":__;.-="" _`,
+             :' `.t""=-.. '<@.`;_  ',@:` ..-=""j.' `;
+                  `:-.._J '-.-'L__ `-.-' L_..-;'
+                    "-.__ ;  .-"  "-.  : __.-"
+                        L ' /.======.\ ' J
+                         "-.   "__"   .-"
+                        __.l"-:_JL_;-";.__
+                     .-j/'.;  ;""""  / .'\"-.
+                   .' /:`. "-.:     .-" .';  `.
+                .-"  / ;  "-. "-..-" .-"  :    "-.
+             .+"-.  : :      "-.__.-"      ;-._   \
+             ; \  `.; ;                    : : "+. ;
+             :  ;   ; ;                    : ;  : \:
+             ;  :   ; :                    ;:   ;  :
+            : \  ;  :  ;                  : ;  /  ::
+            ;  ; :   ; :                  ;   :   ;:
+            :  :  ;  :  ;                : :  ;  : ;
+            ;\    :   ; :                ; ;     ; ;
+            : `."-;   :  ;              :  ;    /  ;
+             ;    -:   ; :              ;  : .-"   :
+             :\     \  :  ;            : \.-"      :
+              ;`.    \  ; :            ;.'_..-=  / ;
+              :  "-.  "-:  ;          :/."      .'  :
+               \         \ :          ;/  __        :
+                \       .-`.\        /t-""  ":-+.   :
+                 `.  .-"    `l    __/ /`. :  ; ; \  ;
+                   \   .-" .-"-.-"  .' .'j \  /   ;/
+                    \ / .-"   /.     .'.' ;_:'    ;
+                     :-""-.`./-.'     /    `.___.'
+                           \ `t  ._  /
+                            "-.t-._:'
+
+-->
+
+<!--
+
+    So you'd like to know how to use impress.js?
+
+    You've made the first, very important step - you're reading the source code.
+    And that's how impress.js presentations are built - with HTML and CSS code.
+
+    Believe me, you need quite decent HTML and CSS skills to be able to use impress.js effectively.
+    And what is even more important, you need to be a designer, too, because there are no default
+    styles for impress.js presentations, there is no default or automatic layout for them.
+
+    You need to design and build it by hand.
+
+    So...
+
+    Would you still like to know how to use impress.js?
+
+-->
+
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+   <title>Curso Responsive Web Design</title>
+
+    <meta name="description" content="Curso/Taller de Responsive Web Design" />
+    <meta name="author" content="Ainhoa Iglesias" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+	<link href="css/mystyle.css" rel="stylesheet" />
+
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+
+
+	<!-- 1	-->
+	<div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+        <h1 class="titulo">Responsive Web Design</h1>
+		<p class="fechalugar"></p>
+		<p class="autor">4) Contenido Flexible<br></p>
+		<ul class="lista lista-c">
+			<li>Tipografía</li>
+			<li>Tablas / Calendarios</li>
+			<li>Mapas</li>
+			<li>Galerías / Sliders</li>
+			<li>Formularios</li>
+			<li>Bloques de contenido</li>
+			<li>Menús de navegación</li>
+		</ul>
+    </div>
+
+
+
+	<div class="step slide" data-x="0" data-y="0">
+        <h2 class="subtitulo">Tipografía</h2>
+		<ul class="lista lista-c">
+			<li>Familia</li>
+			<li>Tamaño</li>
+			<li>Altura de línea</li>
+			<li>Contraste</li>
+			<li>Legibilidad</li>
+		</ul>
+    </div>
+
+	<div class="step slide" data-x="1000" data-y="0">
+        <h2 class="subtitulo">Tamaño en función de la ventana</h2>
+
+		<p>Nuevas unidades de medida (porcentaje en función de la ventana):</p>
+		<ul class="lista lista-c">
+			<li>vw</li>
+			<li>vh</li>
+			<li>vmin</li>
+			<li>vmax</li>
+		</ul>
+
+		<p>Estas medidas también se pueden utilizar en otras propiedades (padding, margin...)</p>
+		<p class="conclusion"><span class="fuente">(<a href="http://dev.w3.org/csswg/css-values/#viewport-relative-lengths">especificación</a> y <a href="http://css-tricks.com/viewport-sized-typography/">artículo</a>)</span> </p>
+    </div>
+
+
+
+	<div class="step slide" data-x="2000" data-y="0">
+        <h2 class="subtitulo">Recursos</h2>
+		<ul class="lista lista-c">
+			<li><a href="http://www.jordanm.co.uk/tinytype">Tinytype: tabla de compatibilidad de tipografías</a></li>
+			<li><a href="http://fittextjs.com/">FitText: ajustar titulares</a> (lo mismo que se conseguiría con vw...)</li>
+			<li><a href="http://letteringjs.com/">Lettering</a></li>
+			<li><a href="http://circletype.labwire.ca/">CircleType</a></li>
+		</ul>
+    </div>
+
+	<div class="step slide" data-x="3000" data-y="0">
+        <h2 class="subtitulo">Trucos</h2>
+		<ul class="lista lista-c">
+			<li><a href="http://www.freepx.net/blog/how-to-stop-font-resizing-on-iphone-without-affecting-zooming-in-safariwebkit/">Truco: prevenir el ajuste de texto en iPhone</a></li>
+			<li><a href="http://mattsnider.com/css-string-truncation-with-ellipsis/">Truncar textos</a></li>
+		</ul>
+    </div>
+
+
+
+	<div class="step slide" data-x="0" data-y="1500">
+        <h2 class="subtitulo">Tablas/Calendario</h2>
+		<ul class="lista lista-c">
+			<li><a href="http://zurb.com/playground/responsive-tables">Responsive Tables</a></li>
+			<li><a href="https://github.com/filamentgroup/tablesaw">Tablesaw</a></li>
+			<!--<li><a href="http://www.consulenza-web.com/2012/01/mediatable-jquery-plugin/">Media Table</a></li>			-->
+			<li><a href="http://johnpolacek.github.io/stacktable.js/">Stacktable</a></li>
+			<li><a href="http://css-tricks.com/footable-a-jquery-plugin-for-responsive-data-tables/">FooTable</a></li>
+			<li><a href="http://codepen.io/dudleystorey/pen/Geprd">Otra tabla fuída</a></li>
+		</ul>
+
+		<!--<p class="conclusion"><span class="fuente">(<a href="http://jsbin.com/arixic">ejemplo</a>)</span> </p>-->
+    </div>
+
+
+
+	<div class="step slide" data-x="0" data-y="3000">
+        <h2 class="subtitulo">Mapas</h2>
+		<p>Es la misma filosofía que para adaptar imágenes</p>
+		<p><a href="http://codepen.io/anon/pen/AwCuz">ejemplo</a></p>
+
+		<p class="conclusion"><span class="fuente">(<a href="http://bradfrostweb.com/blog/post/adaptive-maps/">fuente</a>)</span> </p>
+    </div>
+
+
+
+
+
+	<div class="step slide" data-x="0" data-y="4500">
+        <h2 class="subtitulo">Galerías / Sliders</h2>
+		<ul class="lista lista-c">
+			<li><a href="http://responsiveslides.com/">Responsive Sliders</a></li>
+			<li><a href="http://dimsemenov.com/plugins/royal-slider/">Royal Slider</a></li>
+			<li><a href="http://www.woothemes.com/flexslider/">Flexslider</a></li>
+			<li><a href="http://www.photoswipe.com/">Photo Swipe</a></li>
+			<li><a href="http://galleria.io/">Galleria</a></li>
+			<li><a href="http://www.pixedelic.com/plugins/camera/">Camera</a></li>
+			<li><a href="http://buildinternet.com/project/supersized/">Supersized</a></li>
+		</ul>
+    </div>
+
+
+
+
+	<div class="step slide" data-x="0" data-y="6000">
+        <h2 class="subtitulo">Formularios</h2>
+		<p>No hay muchos problemas</p>
+
+		<ul class="lista lista-c">
+			<li>Cuidado con el tamaño de los textarea</li>
+			<li>Tamaño adecuado en los botones</li>
+			<li>En dispositivs móviles, evitar el uso de librerías que modifican la interfaz nativa de los controles de formulario.</a></li>
+		</ul>
+
+		<p class="conclusion"><span class="fuente">(<a href="http://codepen.io/chriscoyier/full/DmnlJ">ejemplo</a>)</span> </p>
+    </div>
+
+
+
+	<div class="step slide" data-x="0" data-y="7500">
+        <h2 class="subtitulo">Bloques de contenido</h2>
+		<ul class="lista lista-c">
+			<li><a href="http://codepen.io/bradfrost/full/dlwBD">Contenido en acordeón</a></li>
+			<li><a href="http://codepen.io/sturobson/full/xgfeI">Acordeón - Tabs</a></li>
+			<li><a href="http://codepen.io/sturobson/full/DwJlK">Acordeón horizontal/vertical</a></li>
+			<li><a href="http://css-tricks.com/automatic-table-of-contents/">Tabla de contenidos automática</a></li>
+			<li>Para controlar largo de línea: <a href="http://simplefocus.com/flowtype/">FlowType</a>, <a href="http://typesetwith.me/">Typeset with me</a> y <a href="http://css-tricks.com/bookmarklet-colorize-text-45-75-characters-line-length-testing/">Bookmarklet</a></li>
+		</ul>
+    </div>
+
+
+
+
+	<div class="step slide" data-x="0" data-y="9000">
+        <h2 class="subtitulo">Menús de navegación</h2>
+		<p>Diferentes opciones</p>
+		<ul class="lista lista-c">
+			<li>No hacer nada</li>
+			<li>Select</li>
+			<li>Menú oculto (en cabecera o lateral)</li>
+			<li>Acordeón (simple o multi-nivel)</li>
+			<li>Menú en carrusel</li>
+			<li>Etc.</li>
+		</ul>
+
+		<p class="conclusion"><span class="fuente">(<a href="http://responsivenavigation.net/">fuente</a>)</span> </p>
+    </div>
+
+
+	<div class="step slide" data-x="1000" data-y="9000">
+        <h2 class="subtitulo">Menús de navegación</h2>
+		<p>Ejemplos:</p>
+		<ul class="lista lista-c">
+			<li><a href="https://github.com/filamentgroup/RWD-Nav-Patterns">Ejemplo 1</a></li>
+			<li><a href="http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/a-simple-responsive-mobile-first-navigation/">Ejemplo 2</a></li>
+		</ul>
+    </div>
+
+
+	<div class="step slide" data-x="2000" data-y="9000">
+        <h2 class="subtitulo">Menús de navegación</h2>
+		<p>Librerías:</p>
+		<ul class="lista lista-c">
+			<li><a href="http://www.berriart.com/sidr/">Sidr</a> (y además de la tierra!)</li>
+			<li><a href="http://responsive-nav.com/">Responsive Nav</a></li>
+			<li><a href="http://tinynav.viljamis.com/">TinyNav</a></li>
+			<li><a href="https://github.com/mattkersley/Responsive-Menu">Jquery Responsive Menu</a></li>
+			<li><a href="http://jasonweaver.name/lab/flexiblenavigation/">Flexnav</a></li>
+		</ul>
+    </div>
+
+
+
+
+    <div class="step slide" data-x="3000" data-y="9000">
+        <h2 class="subtitulo">Lecturas interesantes</h2>
+		<ul class="lista lista-c">
+			<li><a href="http://bradfrostweb.com/blog/web/responsive-nav-patterns/">Responsive nav patterns (parte 1)</a></li>
+			<li><a href="http://bradfrostweb.com/blog/web/complex-navigation-patterns-for-responsive-design/">Responsive nav patterns (parte 2)</a></li>
+			<li><a href="http://www.creativebloq.com/mobile/master-mobile-navigation-2135807">Estrategias</a></li>
+		</ul>
+    </div>
+
+
+	<div class="step slide" data-x="0" data-y="10500">
+        <h2 class="subtitulo">El "Recurso"</h2>
+		<p class="conclusion"><a href="http://bradfrost.github.io/this-is-responsive/index.html">This is Responsive.</a></p>
+    </div>
+
+
+	<div class="step slide" data-x="1000" data-y="10500">
+        <h2 class="subtitulo">Otros recursos</h2>
+		<ul class="lista lista-c">
+			<li><a href="http://bradfrostweb.com/blog/post/mobile-web-problems/">Mobile Web Problems and How to Avoid Them</a></li>
+			<li><a href="http://responsivedesignweekly.com/">Newsletter RWD</a></li>
+			<li><a href="https://speakerdeck.com/grigs/performance-implications-of-responsive-design">Implicaciones de rendimiento en RWD 1</a></li>
+			<li><a href="https://speakerdeck.com/nebraskajs/performance-and-responsive-web-design">Implicaciones de rendimiento en RWD 2</a></li>
+			<li><a href="http://www.heartinternet.co.uk/blog/2013/04/40-articles-and-resources-to-improve-your-responsive-design-skills/">Varios artículos</a></li>
+			<li><a href="http://css-tricks.com/">CSS Tricks (Chris Coyier)</a></li>
+			<li><a href="https://tutsplus.com/course/30-days-to-learn-jquery/">JQuery en 30 días</a></li>
+		</ul>
+
+    </div>
+
+	<div class="step slide" data-x="2000" data-y="10500">
+        <h2 class="subtitulo">Unos recursos extras:</h2>
+		<ul class="lista lista-c">
+			<li><a href="http://extractcss.com/">extractCSS: saca los id y class de un html y lo muestra en una css vacía.</a></li>
+			<li><a href="http://diagnosticss.github.io/">Diagnostic CSS: bookmarklet para detectar errores CSS</a></li>
+			<li><a href="http://andismith.github.io/caniuse-widget/">"Can I use" widget</a></li>
+			<li><a href="http://stylifyme.com/">Stylifyme: generador online de guía de estilos</a></li>
+			<li><a href="http://lab.ejci.net/favico.js/">FavicoJS: dándole uso práctico a los favicons</a></li>
+			<li><a href="http://daux.io/">Daux: generador de documentación</a></li>
+		</ul>
+    </div>
+
+
+	<div class="step slide" data-x="3000" data-y="10500">
+        <h2 class="subtitulo">Lo último:</h2>
+		<ul class="lista lista-c">
+			<li><a href="http://niravigad.com/responsive_man/">Responsive Man.</a></li>
+		</ul>
+    </div>
+
+
+
+
+
+
+
+	<div class="step slide" data-x="0" data-y="12000">
+        <h2 class="subtitulo">Fin!</h2>
+
+		<p>Muchas gracias por vuestra asistencia</p>
+
+		<p>Ahora os toca poner en práctica todo lo que hemos visto.</p>
+
+		<p class="conclusion">Go!</p>
+
+    </div>
+
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) {
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+
+
+
+
+</body>
+</html>

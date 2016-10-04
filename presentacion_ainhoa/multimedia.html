@@ -1,0 +1,377 @@
+<!doctype html>
+
+<!--
+
+    Welcome to the light side of the source, young padawan.
+
+    One step closer to learn something interesting you are...
+
+                               ____
+                            _.' :  `._
+                        .-.'`.  ;   .'`.-.
+               __      / : ___\ ;  /___ ; \      __
+             ,'_ ""=-.:__;".-.";: :".-.":__;.-="" _`,
+             :' `.t""=-.. '<@.`;_  ',@:` ..-=""j.' `;
+                  `:-.._J '-.-'L__ `-.-' L_..-;'
+                    "-.__ ;  .-"  "-.  : __.-"
+                        L ' /.======.\ ' J
+                         "-.   "__"   .-"
+                        __.l"-:_JL_;-";.__
+                     .-j/'.;  ;""""  / .'\"-.
+                   .' /:`. "-.:     .-" .';  `.
+                .-"  / ;  "-. "-..-" .-"  :    "-.
+             .+"-.  : :      "-.__.-"      ;-._   \
+             ; \  `.; ;                    : : "+. ;
+             :  ;   ; ;                    : ;  : \:
+             ;  :   ; :                    ;:   ;  :
+            : \  ;  :  ;                  : ;  /  ::
+            ;  ; :   ; :                  ;   :   ;:
+            :  :  ;  :  ;                : :  ;  : ;
+            ;\    :   ; :                ; ;     ; ;
+            : `."-;   :  ;              :  ;    /  ;
+             ;    -:   ; :              ;  : .-"   :
+             :\     \  :  ;            : \.-"      :
+              ;`.    \  ; :            ;.'_..-=  / ;
+              :  "-.  "-:  ;          :/."      .'  :
+               \         \ :          ;/  __        :
+                \       .-`.\        /t-""  ":-+.   :
+                 `.  .-"    `l    __/ /`. :  ; ; \  ;
+                   \   .-" .-"-.-"  .' .'j \  /   ;/
+                    \ / .-"   /.     .'.' ;_:'    ;
+                     :-""-.`./-.'     /    `.___.'
+                           \ `t  ._  /
+                            "-.t-._:'
+
+-->
+
+<!--
+
+    So you'd like to know how to use impress.js?
+
+    You've made the first, very important step - you're reading the source code.
+    And that's how impress.js presentations are built - with HTML and CSS code.
+
+    Believe me, you need quite decent HTML and CSS skills to be able to use impress.js effectively.
+    And what is even more important, you need to be a designer, too, because there are no default
+    styles for impress.js presentations, there is no default or automatic layout for them.
+
+    You need to design and build it by hand.
+
+    So...
+
+    Would you still like to know how to use impress.js?
+
+-->
+
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+   <title>Curso Responsive Web Design</title>
+
+    <meta name="description" content="Curso/Taller de Responsive Web Design" />
+    <meta name="author" content="Ainhoa Iglesias" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+	<link href="css/mystyle.css" rel="stylesheet" />
+
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+
+
+	<!-- 1	-->
+	<div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+        <h1 class="titulo">Responsive Web Design</h1>
+		<p class="fechalugar"></p>
+		<p class="autor">3) Multimedia Flexible<br></p>
+		<ul class="lista lista-c">
+			<li>imágenes</li>
+			<li>videos</li>
+		</ul>
+    </div>
+
+
+
+	<div class="step slide" data-x="0" data-y="0">
+        <h2 class="subtitulo">Multimedia flexible</h2>
+		<p class="conclusion">No consiste en cambiar únicamente las dimensiones!</p>
+		<p class="code">img{max-width:100%;}</p>
+		<p class="conclusion">Hay que optimizar el peso</p>
+		<p class="conclusion">Y a veces, esto no es suficiente, hay que <a href="http://www.stucox.com/blog/dont-squash-me-using-min-width-on-fluid-images/">pensarlo bien</a></p>
+    </div>
+
+
+	<div class="step slide" data-x="1000" data-y="0">
+        <h2 class="subtitulo">Handicap de las conexiones</h2>
+		<p>Los MB no son gratis, por eso hay que optimizar.</p>
+		<p class="conclusion">plan de datos (contrato o prepago): varían según tarifa/compañía<br>
+		<span class="fuente">(fuente: <a href="http://www.rankia.com/informacion/tarifas-moviles">Rankia)</a></span></p>
+    </div>
+
+
+	<div class="step slide" data-x="5000" data-y="0">
+        <h2 class="subtitulo">Hora de hacer cálculos</h2>
+		<ul class="lista lista-c">
+			<li>¿Cuánto pesa tu página? - <a href="http://www.sitepoint.com/10-best-webpage-weight-analysis-tools/">Herramientas</a></li>
+			<li>¿Qué tarifa de datos tienes?</li>
+			<li>¿Cuánto has consumido este mes?</li>
+			<li>Media de páginas que visitas</li>
+			<li>...</li>
+		</ul>
+
+    </div>
+
+
+	<div class="step slide" data-x="0" data-y="1500">
+        <h2 class="subtitulo">Imágenes</h2>
+		<p>Aspectos a tener en cuenta</p>
+		<ul class="lista lista-c">
+			<li>Hay o no imágenes previas</li>
+			<li>El código es semánticamente correcto o no</li>
+			<li>El código valida o no</li>
+			<li>Tienes en cuenta  la <a href="http://usecases.responsiveimages.org/#art-direction">dirección de arte o no</a></li>
+			<li>Puedes/quieres utilizar javascript o no</li>
+			<li>Utilizas un CMS</li>
+			<li>Puedes utilizar componentes de servidor</li>
+			<li>Puedes utilizar componentes de 3ª parte</li>
+			<li>Te preocupas por el análisis del ancho de banda</li>
+		</ul>
+		<!--
+		<p class="conclusion">Y ojo con las <a href="http://www.smashingmagazine.com/2013/07/22/simple-responsive-images-with-css-backgrounds">imágenes de fondo</a>, que se olvidan
+		-->
+    </div>
+
+
+	<div class="step slide" data-x="1000" data-y="1500">
+        <h2 class="subtitulo">Métodos</h2>
+		<p>Hay <a href="http://css-tricks.com/which-responsive-images-solution-should-you-use/">muchas opciones</a>, pero ninguna es mágica ni perfecta.</p>
+
+		<ul class="lista lista-c">
+			<li>En cliente
+			<ul>
+				<li>Elemento &ltpicture&gt y atributo srcset</li>
+				<li>Picturefill</li>
+			</ul></li>
+			<li>En servidor</li>
+			<ul>
+				<li>Adaptive Images</li>
+				<li>Image Resizer</li>
+			</ul></li>
+			<li>3ª parte</li>
+			<ul>
+				<li>ReSrc</li>
+			</ul></li>
+		</ul>
+
+	</div>
+
+
+
+
+	<div class="step slide" data-x="0" data-y="3000">
+        <h2 class="subtitulo">Elemento &lt;picture&gt;</h2>
+
+		<p class="code">
+
+		&lt;picture&gt;<br>
+	   &lt;source media="(min-width: 1100px)" src="large.jpg"&gt;<br>
+	   &lt;source media="(min-width: 790px)" src="med.jpg"&gt;<br>
+	   &lt;source src="small.jpg"&gt;<br>
+	   &lt;!-- fallback --&gt;<br>
+	   &lt;img src="small.jpg" alt=""&gt;<br>
+		texto alternativo/accesible<br>
+		&lt;/picture&gt;
+		</p>
+
+		<p class="conclusion"><span class="fuente">(<a href="http://picture.responsiveimages.org/">especificación picture</a>)</span> </p>
+
+	 </div>
+
+
+	 <div class="step slide" data-x="1000" data-y="3000">
+        <h2 class="subtitulo">srcset</h2>
+		<p>Por ejempo, para retina</p>
+		<p class="code">
+
+		&lt;picture&gt;<br>
+	   &lt;source media="(min-width: 1100px)" srcset="large-1.jpg 1x, large-2.jpg 2x"&gt;<br>
+	   &lt;source media="(min-width: 790px)" srcset="med-1.jpg 1x, med-2.jpg 2x"&gt;<br>
+	   &lt;source srcset="small-1.jpg 1x, small-2.jpg 2x"&gt;<br>
+	   &lt;!-- fallback --&gt;<br>
+	   &lt;img src="small.jpg" alt=""&gt;<br>
+		texto alternativo/accesible<br>
+		&lt;/picture&gt;
+		</p>
+
+
+	 </div>
+
+
+
+	<div class="step slide" data-x="3000" data-y="3000">
+        <h2 class="subtitulo">Picturefill</h2>
+		<p>Polyfill para el elemento picture:
+
+		<p class="conclusion"><span class="fuente">(<a href="https://github.com/scottjehl/picturefill">Picturefill</a>)</span> </p>
+	</div>
+
+
+	<div class="step slide" data-x="5000" data-y="3000">
+        <h2 class="subtitulo">Adaptive Images</h2>
+		<p>Necesitamos:
+		<ul class="lista lista-c">
+			<li>Entorno LAMP</li>
+			<li>Librería GD</li>
+			<li>.htaccess</li>
+			<li>Librería JS</li>
+		</ul>
+
+		<p class="conclusion"><span class="fuente">(<a href="http://adaptive-images.com/">Adaptive Images</a>)</span> </p>
+	</div>
+
+
+	<div class="step slide" data-x="6000" data-y="3000">
+        <h2 class="subtitulo">Image Resizer</h2>
+		<p>Necesitamos:
+		<ul class="lista lista-c">
+			<li>.NET</li>
+			<li>IIS</li>
+		</ul>
+
+		<p class="conclusion"><span class="fuente">(<a href="http://imageresizing.net/">Image Resizer</a>)</span> </p>
+	</div>
+
+
+
+
+
+
+
+	<div class="step slide" data-x="8000" data-y="3000">
+        <h2 class="subtitulo">ReSrc</h2>
+		<p>Necesitamos:
+		<ul class="lista lista-c">
+			<li>que el servicio funcione</li>
+			<li>$</li>
+		</ul>
+
+		<p class="conclusion"><span class="fuente">(<a href="http://www.resrc.it">ReSrc</a>)</span> </p>
+	</div>
+
+	<div class="step slide" data-x="0" data-y="4500">
+        <h2 class="subtitulo">Lecturas interesantes</h2>
+		<ul class="lista lista-c">
+			<li><a href="http://matthiaslau.github.io/responsive-images/">Un vistazo a varias técnicas</a></li>
+			<li><a href="http://blog.cloudfour.com/8-guidelines-and-1-rule-for-responsive-images/">8 Guidelines and 1 Rule for Responsive Images</a></li>
+			<li><a href="http://coding.smashingmagazine.com/2013/06/02/clown-car-technique-solving-for-adaptive-images-in-responsive-web-design/">Clown Car Technique: Solving Adaptive Images In Responsive Web Design</a></li>
+		</ul>
+	</div>
+
+	<div class="step slide" data-x="1000" data-y="4500">
+        <h2 class="subtitulo">Consejos para Retina</h2>
+		<ul class="lista lista-c">
+			<li><a href="http://www.netmagazine.com/features/tips-and-tricks-retina-images-responsive-web-design">Trucos</a></li>
+			<li><a href="https://github.com/adamdbradley/foresight.js">Foresight: simulación de carga en alta resolución</a></li>
+			<li><a href="http://stackoverflow.com/questions/15551287/how-to-test-a-website-for-retina-on-windows-without-an-actual-retina-display/17228135#17228135">Comprobar retina display en un dispositivo sin retina</a></li>
+		</ul>
+		<p class="conclusion"><span class="fuente">(<a href="http://caniuse.com/svg">soporte svg</a> y <a href="http://caniuse.com/fontface">soporte font-face</a>)</span> </p>
+
+	</div>
+
+
+	<div class="step slide" data-x="2000" data-y="4500">
+        <h2 class="subtitulo">Más recursos</h2>
+		<ul class="lista lista-c">
+			<li><a href="http://icomoon.io/">Icomoon</a> y <a href="http://fontello.com/">Fontello</a>: Creación de iconos mediante tipografía</a></li>
+			<li><a href="http://pictos.cc/font/">Pictos: Librería de iconos con tipografía</a></li>
+			<li><a href="http://iconizr.com/">Iconizr: SVG a icono</a></li>
+			<li><a href="http://www.responsiveicons.co.uk/">Responsive Icons</a></li>
+			<li><a href="http://www.flaticon.com/">Flaticon: librería iconos svg gratuíta</a></li>
+			<li><a href="http://tridiv.com/">Tridiv: editor web para crear formas 3D con CSS</a></li>
+			<li><a href="https://github.com/nathanford/pngy">Pngy: Carga en función de la velocidad</a></li>
+		</ul>
+	</div>
+
+
+	<div class="step slide" data-x="0" data-y="6000">
+        <h2 class="subtitulo">Videos</h2>
+
+		<ul class="lista lista-c">
+			<li><a href="http://webdesignerwall.com/tutorials/css-elastic-videos">Solución básica</a></li>
+			<li><a href="http://www.creativebloq.com/html5/create-fluid-width-videos-8116852">Solución completa</a></li>
+
+			<li><a href="http://fitvidsjs.com/">FitVids</a></li>
+
+			<li><a href="http://www.iandevlin.com/blog/2012/08/html5/responsive-html5-video">Responsive HTML5 video</a></li>
+			<li><a href="http://www.iandevlin.com/blog/2012/12/html5/html5-video-for-retina-displays">Retina para videos</a></li>
+		</ul>
+    </div>
+
+
+	<div class="step slide" data-x="0" data-y="7500">
+        <h2 class="subtitulo">Embeber contenido externo</h2>
+
+		<ul class="lista lista-c">
+			<li><a href="http://embedresponsively.com/">Embed responsively</a></li>
+		</ul>
+    </div>
+
+
+
+
+
+
+	<div class="step slide" data-x="1000" data-y="9000">
+        <h2 class="subtitulo">Adaptar</h2>
+		<ul class="lista lista-1">
+			<li><a href="layout.html">Layout flexible</a></li>
+			<li><a href="mediaqueries.html">Media Queries</a></li>
+			<li><a href="multimedia.html">Multimedia flexible</a></li>
+			<li><a href="contenido.html">Contenido flexible</a></li>
+		</ul>
+    </div>
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) {
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+
+
+
+
+</body>
+</html>

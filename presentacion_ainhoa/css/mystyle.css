@@ -1,0 +1,27 @@
+.titulo{font-size:200%; line-height:120%; padding:0 0 100px 0; text-align:center;  color:#000;}
+.subtitulo{font-size:200%; line-height:110%; padding:0 0 50px 0; color:#000;}
+
+.fechalugar {text-align:right; padding:0 0 30px 0;}
+
+.autor{text-align:right; font-size:110%;}
+.logo{}
+
+.lista{width:80%; margin:15px auto;}
+	.lista li{padding:0 0 15px 0;}
+	.lista-a li{list-style-type:lower-alpha;}
+	.lista-c li{list-style-type:disc;}
+	.lista-1 li{list-style-type:decimal;}
+	.lista ul{width:80%; margin:10px auto;}
+
+.conclusion	{text-align:center; font-size:140%; padding:40px 0 10px 0;}
+
+.code{text-align:left; font-size:110%; padding:20px 0 10px 0; font-family:"Courier New", Arial, sans-serif; font-weight:bold;}
+.comment{font-weight:normal; font-size:90%; display:block;}
+
+.center{text-align:center;}
+
+.conclusion img{max-width:100%; height:auto;}
+
+.fuente{font-size:30%; font-style:italic; color:#666;}
+
+.flotaleft{float:left; padding:0 20px 15px 0; }

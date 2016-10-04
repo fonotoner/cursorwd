@@ -1,0 +1,74 @@
+.calendario{width:90%; margin:30px auto;}
+.calendario td{border:1px solid #CCC;}
+	.evento{display:block;}
+	.day{font-size:300%; display:block; text-align:right;}
+	.weekend{background:#CCC;}
+
+
+
+img{max-width:100%;}
+
+
+
+.video-container {
+	position: relative;
+
+    padding-bottom: 42.85%;
+	/*
+    padding-bottom: 56.25%;
+
+	padding-bottom: 75%;
+    */
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+@media screen and (max-width:550px){
+
+    body{
+         background-color:#F00;
+    }
+
+} /* end max-width:550px */
+
+
+
+@media screen and (min-width:551px) and (max-width:850px){
+
+     body{
+         background-color:#0F0;
+    }
+
+} /* end (min-width:551px) and (max-width:850px) */
+
+
+@media screen and (min-width:851px) and (max-width:1000px){
+
+     body{
+         background-color:#00F;
+    }
+
+} /* end (min-width:851px) and (max-width:1000px) */
+
+
+
+@media screen and (min-width:1001px){
+
+    body{
+         background-color:#000;
+    }
+
+} /* end min-width:1001px */
